@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./store.js" async></script>
+    <title>shopping cart</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-nav">
+        <nav>
+            <ul>
+                <li>
+                    <img src="icon.png" class="Logo" width="150px" height="100px">
+                    <a href="Index.html" >Home</a>    
+                </li>
+            </ul>
+        </nav>
+        </div> 
+        </header>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- <div class="cart-info">
+            <h1 class="btn cart-btn">products</h1>
+        
+        <div id="cart" class="cart">
+            <div class="product-img">img</div>
+            <div class="product-name">name</div>
+            <div class="product-price">price</div>
+        </div>
+        <hr> -->
+        <table class="table table-hover table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">image</th>
+                <th scope="col">Name</th>
+                <th scope="col">price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Add or Remove</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"> <img src="scrapbookpics/pic1.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Birthday Special ScrapBook</td>
+                    <td>1500</td>
+                    <td class="quantity1">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but1"  role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus1">-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus1">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic2.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Wooden ScrapBook</td>
+                    <td>3000</td>
+                    <td class="quantity2">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but2" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus2">-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus2">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic3.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Bright Colors, Bold Shapes</td>
+                    <td>1000</td>
+                    <td class="quantity3">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but3" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus3">-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus3">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic4.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Staying Organized</td>
+                    <td>2500</td>
+                    <td class="quantity4">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but4" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus4">-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus4">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic5.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Book With Instant Pictures</td>
+                    <td>1500</td>
+                    <td class="quantity5">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but5" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus5">-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus5">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic6.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Book of Memories</td>
+                    <td>1000</td>
+                    <td class="quantity6">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but6" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus6">-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus6">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic7.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Sticky Memories</td>
+                    <td>2000</td>
+                    <td class="quantity7">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but7" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus7" >-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus7">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic8.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Smash Book Style</td>
+                    <td>3500</td>
+                    <td class="quantity8">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but8" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus8">-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus8">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic9.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>The Story of Us</td>
+                    <td>1500</td>
+                    <td class="quantity9">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but9" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus9">-</button>
+                            
+                            <button type="button" class="btn btn-secondary  btn-sm shadow-none plus9">+</button>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="scrapbookpics/pic10.jpg" class="content-image" width="100px" height="50px"></th>
+                    <td>Photo Heavy ScrapBook</td>
+                    <td>4000</td>
+                    <td class="quantity0">0</td>
+                    <td>
+                        <div class="btn-group btn-sm shadow-none but0" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary btn-sm shadow-none minus0">-</button>
+                            
+                            <button type="button" class="tn btn-secondary b btn-sm shadow-none plus0">+</button>
+                          </div>
+                    </td>
+                  </tr>
+            </tbody>
+          </table>
+        <div class="Product">
+           
+        </div>
+        <button type="submit" class="btn cart-btn purchase" >Purchse</button>
+         <div class="boxdisp grab">
+            <div class="title" style="text-align: center;padding: 20px;"><i style="font-size:70px ; color: chartreuse;" class="fa">&#xf058;</i></div>
+            <div style="padding: 10px;">Thank You,Your order has been places sucessfully!</div>
+            <div class="okay"><button class="ok" >okay</button></div>
+            </div>
+             
+        </div>
+        
+      
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <section class="newsletter"> 
+            
+            <div class="connect">
+                <h1>Connect With Us:</h1><br>
+                <button id="facebook-btn" type="button">Facebook</button><br><br>
+                <button id="twitter-btn" type="button">Twitter</button><br><br>
+                <button id="google-btn" type="button">Google</button><br><br>
+            </div>
+            <div class="contact">
+                <h1>Contact Info:</h1>
+                <p>Phone: 03*********</p>
+                <p>Email <email>xyz@gmail.com</email></p>
+            </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
